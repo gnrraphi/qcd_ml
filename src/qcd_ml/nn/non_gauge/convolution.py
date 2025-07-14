@@ -62,7 +62,6 @@ class C_Convolution(torch.nn.Module):
 
         """
         nu = U.dim()
-        assert nu > self.nd # (C, x_0, ..., x_{nd-1}, ...)
 
         # apply padding
         U = self._circular_pad(U)
